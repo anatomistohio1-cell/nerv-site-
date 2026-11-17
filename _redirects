@@ -1,0 +1,8 @@
+# Clean URL rewrites for NERV Auxiliary Terminal
+/clock        /clock.html        200
+/race         /race.html         200
+/audio        /audio.html        200
+/connect      /connect.html      200
+/visualiser   /visualiser.html   200
+/loq          /loq.html          200
+/index        /index.html        200
