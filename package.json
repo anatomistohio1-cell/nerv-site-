@@ -1,0 +1,18 @@
+{
+  "name": "nerv-auxiliary-terminal",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "npm run build:nerv",
+    "build:nerv": "node scripts/build-deploy.mjs nerv",
+    "build:loq": "node scripts/build-deploy.mjs loq",
+    "relay:dev": "wrangler dev --config cloud-relay/wrangler.jsonc",
+    "relay:deploy": "wrangler deploy --config cloud-relay/wrangler.jsonc",
+    "test:netlify": "node tests/test_netlify_functions.mjs",
+    "test:calendar": "node tests/test_race_calendar.mjs",
+    "package:uploads": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/package-uploads.ps1"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

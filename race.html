@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>NERV Race Control</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="race">
+    <div class="app-shell page-shell">
+      <header class="topbar">
+        <a class="brand-anchor" href="index.html" aria-label="Open home screen">
+          <span class="brand-mark">N</span>
+          <div>
+            <p class="eyebrow">Magi interface</p>
+            <h1>NERV RACE CONTROL</h1>
+          </div>
+        </a>
+        <div class="topbar-actions">
+          <button class="ghost-button" id="toggleFullscreen" type="button">Full Screen</button>
+        </div>
+      </header>
+
+      <main class="page-view">
+        <section class="card single-page-card race-calendar-page">
+          <div class="card-header">
+            <div>
+              <p class="eyebrow">RACE CONTROL</p>
+              <h2>Official series calendars</h2>
+            </div>
+            <div class="inline-status muted" id="raceCalendarStatus">LOADING</div>
+          </div>
+
+          <p class="source-note" id="raceCalendarNote" role="status" aria-live="polite">
+            Loading sourced season metadata from the local calendar catalogue.
+          </p>
+
+          <section class="race-class-section" aria-labelledby="raceClassHeading">
+            <div class="card-header">
+              <div>
+                <p class="eyebrow">CLASS SPOTLIGHT</p>
+                <h2 id="raceClassHeading">Machines of the grid</h2>
+              </div>
+              <span class="inline-status muted">CLASS REFERENCE</span>
+            </div>
+            <p class="source-note">
+              Representative cars from the featured disciplines; actual entries vary by series, event, and season.
+            </p>
+            <div class="race-class-grid">
+              <figure class="race-class-card">
+                <div class="race-class-image">
+                  <img src="assets/race/hypercar-ferrari-499p.jpg" alt="Ferrari AF Corse 499P racing at Spa-Francorchamps" width="960" height="540" loading="lazy" decoding="async" />
+                  <span class="race-class-label">WEC / HYPERCAR</span>
+                </div>
+                <figcaption>
+                  <h3>Ferrari 499P</h3>
+                  <p>Le Mans prototype · hybrid</p>
+                  <div class="race-image-credit">
+                    <a href="https://commons.wikimedia.org/wiki/File:2023_6_Hours_of_Spa-Francorchamps_Ferrari_AF_Corse_Ferrari_499P_No.51_(DSC07093).jpg" target="_blank" rel="noopener noreferrer">Photo: MarcelX42 (cropped)</a>
+                    <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+                  </div>
+                </figcaption>
+              </figure>
+              <figure class="race-class-card">
+                <div class="race-class-image">
+                  <img src="assets/race/gt3-lamborghini-huracan-evo2.jpg" alt="Iron Dames Lamborghini Huracan GT3 Evo2 racing at Spa-Francorchamps" width="960" height="540" loading="lazy" decoding="async" />
+                  <span class="race-class-label">GT3 / LMGT3</span>
+                </div>
+                <figcaption>
+                  <h3>Lamborghini Huracán GT3 EVO2</h3>
+                  <p>Customer GT racing · endurance spec</p>
+                  <div class="race-image-credit">
+                    <a href="https://commons.wikimedia.org/wiki/File:2024_6_Hours_of_Spa-Francorchamps_Iron_Dames_Lamborghini_Hurac%C3%A1n_GT3_Evo2_No.85_(DSC05833).jpg" target="_blank" rel="noopener noreferrer">Photo: MarcelX42 (cropped)</a>
+                    <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+                  </div>
+                </figcaption>
+              </figure>
+              <figure class="race-class-card">
+                <div class="race-class-image">
+                  <img src="assets/race/gtp-cadillac-porsche.jpg" alt="Cadillac V-LMDh leading Porsche 963 prototypes at Daytona" width="960" height="640" loading="lazy" decoding="async" />
+                  <span class="race-class-label">IMSA / GTP</span>
+                </div>
+                <figcaption>
+                  <h3>Cadillac V-Series.R</h3>
+                  <p>GTP · LMDh prototype</p>
+                  <div class="race-image-credit">
+                    <a href="https://commons.wikimedia.org/wiki/File:CadillacVLMDhwithPorsche963s.jpg" target="_blank" rel="noopener noreferrer">Photo: 350z33 (cropped)</a>
+                    <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+                  </div>
+                </figcaption>
+              </figure>
+              <figure class="race-class-card">
+                <div class="race-class-image">
+                  <img src="assets/race/lmp2-oreca-07.jpg" alt="DragonSpeed Oreca 07 racing through Village corner at Silverstone" width="960" height="540" loading="lazy" decoding="async" />
+                  <span class="race-class-label">WEC / IMSA · LMP2</span>
+                </div>
+                <figcaption>
+                  <h3>Oreca 07-Gibson</h3>
+                  <p>LMP2 · spec prototype</p>
+                  <div class="race-image-credit">
+                    <a href="https://commons.wikimedia.org/wiki/File:Dragonspeed_Oreca_07_Maldonado_Silverstone_2018.jpg" target="_blank" rel="noopener noreferrer">Photo: John Chapman (cropped)</a>
+                    <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+                  </div>
+                </figcaption>
+              </figure>
+              <figure class="race-class-card">
+                <div class="race-class-image">
+                  <img src="assets/race/rally1-toyota-yaris.jpg" alt="Toyota GR Yaris Rally1 driven by Elfyn Evans" width="960" height="640" loading="lazy" decoding="async" />
+                  <span class="race-class-label">WRC / RALLY1</span>
+                </div>
+                <figcaption>
+                  <h3>Toyota GR Yaris Rally1</h3>
+                  <p>World Rally Championship · Rally1</p>
+                  <div class="race-image-credit">
+                    <a href="https://commons.wikimedia.org/wiki/File:2025_Toyota_GR_Yaris_Rally_1_Evans.jpg" target="_blank" rel="noopener noreferrer">Photo: TTTNIS (cropped)</a>
+                    <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">CC0 1.0</a>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <div class="race-calendar-toolbar">
+            <label class="companion-field" for="raceSeriesFilter">
+              <span>Series</span>
+              <select id="raceSeriesFilter">
+                <option value="all">All series</option>
+                <option value="wec">FIA WEC</option>
+                <option value="imsa">IMSA WeatherTech</option>
+                <option value="gtwc">GT World Challenge Europe</option>
+                <option value="wrc">World Rally Championship</option>
+                <option value="motogp">MotoGP</option>
+              </select>
+            </label>
+            <span class="race-calendar-verified" id="raceCalendarVerifiedAt">Source check: pending</span>
+          </div>
+
+          <div class="race-calendar-list" id="raceCalendarList" aria-live="polite"></div>
+          <section class="race-feed-section" aria-labelledby="raceFeedHeading">
+            <div class="card-header">
+              <div>
+                <p class="eyebrow">RSS NEWSWIRE</p>
+                <h2 id="raceFeedHeading">Latest race and rally headlines</h2>
+              </div>
+              <div class="inline-status muted" id="raceFeedStatus">WAITING</div>
+            </div>
+            <div class="race-feed-toolbar">
+              <label class="companion-field" for="raceFeedFilter">
+                <span>News feed</span>
+                <select id="raceFeedFilter">
+                  <option value="wec">WEC</option>
+                  <option value="imsa">IMSA</option>
+                  <option value="wrc">WRC</option>
+                  <option value="rally">Rallying</option>
+                </select>
+              </label>
+              <button class="control-button alt" id="refreshRaceFeed" type="button">Refresh headlines</button>
+            </div>
+            <p class="source-note" id="raceFeedNote" role="status" aria-live="polite">
+              Headlines refresh every 15 minutes while this page is open. Article content stays with its publisher.
+            </p>
+            <div class="race-feed-list" id="raceFeedList" aria-live="polite"></div>
+            <p class="race-feed-attribution" id="raceFeedAttribution"></p>
+          </section>
+        </section>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

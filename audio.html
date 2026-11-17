@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>NERV Audio Control</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="audio">
+    <div class="app-shell page-shell">
+      <header class="topbar">
+        <a class="brand-anchor" href="index.html" aria-label="Open home screen">
+          <span class="brand-mark">N</span>
+          <div>
+            <p class="eyebrow">Magi interface</p>
+            <h1>NERV AUDIO</h1>
+          </div>
+        </a>
+        <div class="topbar-actions">
+          <button class="ghost-button" id="toggleFullscreen" type="button">Full Screen</button>
+        </div>
+      </header>
+
+      <main class="page-view">
+        <section class="card single-page-card audio-card">
+          <div class="card-header">
+            <div>
+              <p class="eyebrow">AUDIO CONTROL</p>
+              <h2>Input selection</h2>
+            </div>
+            <div class="inline-status muted">LOCAL</div>
+          </div>
+
+          <div class="source-selector" role="radiogroup" aria-label="Audio source selector">
+            <button class="source-option" type="button" data-source="browser" aria-pressed="false">
+              <span>Shared browser audio</span>
+              <small>Starts on selection</small>
+            </button>
+            <button class="source-option" type="button" data-source="microphone" aria-pressed="false">
+              <span>Microphone</span>
+              <small>Permission required</small>
+            </button>
+            <button class="source-option" type="button" data-source="pc" aria-pressed="false" disabled>
+              <span>LOQ audio stream</span>
+              <small>Not available yet</small>
+            </button>
+          </div>
+
+          <div class="audio-status-panel">
+            <div>
+              <span class="mini-label">Current source</span>
+              <strong id="audioSourceStatus">No source selected</strong>
+            </div>
+            <div>
+              <span class="mini-label">Input level</span>
+              <strong id="audioLevelStatus">Idle</strong>
+            </div>
+          </div>
+
+          <div class="source-note" id="audioSourceNote">
+            Select an audio source to begin. No microphone or screen capture starts automatically.
+          </div>
+
+          <div class="section-divider" aria-hidden="true"></div>
+
+          <div class="source-note">
+            Windows output selection and volume affect real LOQ playback endpoints. This dashboard does not stream Windows application audio.
+          </div>
+
+          <div class="section-divider" aria-hidden="true"></div>
+
+          <section class="audio-output-section" aria-labelledby="audioOutputHeading">
+            <div class="card-header">
+              <div>
+                <p class="eyebrow">WINDOWS CORE AUDIO</p>
+                <h2 id="audioOutputHeading">LOQ playback outputs</h2>
+              </div>
+              <button class="control-button alt" id="refreshAudioDevices" type="button">Refresh</button>
+            </div>
+            <p class="source-note" id="audioConnectionHint" aria-live="polite">
+              Connect to LOQ Link from the Connect page to view Windows-detected outputs.
+            </p>
+            <div class="audio-endpoint-list" id="windowsAudioDevices" aria-live="polite"></div>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

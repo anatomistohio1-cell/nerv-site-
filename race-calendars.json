@@ -1,0 +1,132 @@
+{
+  "verifiedAt": "2026-11-17",
+  "series": [
+    {
+      "id": "wec",
+      "name": "FIA World Endurance Championship",
+      "shortName": "FIA WEC",
+      "season": 2027,
+      "calendarStatus": "published",
+      "discipline": "World endurance racing",
+      "roundCount": 9,
+      "sourceName": "Official FIA WEC calendar",
+      "sourceUrl": "https://www.fiawec.com/",
+      "events": [
+        { "name": "Qatar 1812km", "location": "Lusail, Qatar", "start": "2027-03-25", "end": "2027-03-27", "url": "https://www.fiawec.com/en/race/qatar-1812km-2027" },
+        { "name": "6 Hours of Imola", "location": "Imola, Italy", "start": "2027-04-09", "end": "2027-04-11", "url": "https://www.fiawec.com/en/race/6-hours-of-imola-2027" },
+        { "name": "6 Hours of Silverstone", "location": "Silverstone, United Kingdom", "start": "2027-04-23", "end": "2027-04-25", "url": "https://www.fiawec.com/en/race/6-hours-of-silverstone-2027" },
+        { "name": "TotalEnergies 6 Hours of Spa-Francorchamps", "location": "Stavelot, Belgium", "start": "2027-05-13", "end": "2027-05-15", "url": "https://www.fiawec.com/en/race/totalenergies-6-hours-of-spa-francorchamps-2027" },
+        { "name": "24 Hours of Le Mans", "location": "Le Mans, France", "start": "2027-06-06", "end": "2027-06-13", "url": "https://www.fiawec.com/en/race/24-hours-of-le-mans-2027" },
+        { "name": "ROLEX 6 Hours of Sao Paulo", "location": "Sao Paulo, Brazil", "start": "2027-07-09", "end": "2027-07-11", "url": "https://www.fiawec.com/en/race/rolex-6-hours-of-sao-paulo-2027" },
+        { "name": "Lone Star Le Mans", "location": "Austin, United States", "start": "2027-09-10", "end": "2027-09-12", "url": "https://www.fiawec.com/en/race/lone-star-le-mans-2027" },
+        { "name": "6 Hours of Fuji", "location": "Oyama, Japan", "start": "2027-09-24", "end": "2027-09-26", "url": "https://www.fiawec.com/en/race/6-hours-of-fuji-2027" },
+        { "name": "Bapco Energies 8 Hours of Bahrain", "location": "Sakhir, Bahrain", "start": "2027-11-04", "end": "2027-11-06", "url": "https://www.fiawec.com/en/race/bapco-energies-8-hours-of-bahrain-2027" }
+      ]
+    },
+    {
+      "id": "imsa",
+      "name": "IMSA WeatherTech SportsCar Championship",
+      "shortName": "IMSA WeatherTech",
+      "season": 2027,
+      "calendarStatus": "published",
+      "discipline": "North American sports car racing",
+      "roundCount": 11,
+      "sourceName": "Official IMSA 2027 schedule",
+      "sourceUrl": "https://www.imsa.com/2027/schedule",
+      "events": [
+        { "name": "Rolex 24 At Daytona", "location": "Daytona Beach, Florida", "start": "2027-01-28", "end": "2027-01-31", "url": "https://www.imsa.com/events/2027-rolex-24-at-daytona" },
+        { "name": "Mobil 1 Twelve Hours of Sebring", "location": "Sebring, Florida", "start": "2027-03-17", "end": "2027-03-20", "url": "https://www.imsa.com/events/2027-sebring-international-raceway" },
+        { "name": "Acura Grand Prix of Long Beach", "location": "Long Beach, California", "start": "2027-04-16", "end": "2027-04-17", "url": "https://www.imsa.com/events/2027-long-beach-street-circuit" },
+        { "name": "WeatherTech Raceway Laguna Seca", "location": "Monterey, California", "start": "2027-04-30", "end": "2027-05-02", "url": "https://www.imsa.com/events/2027-weathertech-raceway-laguna-seca" },
+        { "name": "Chevrolet Detroit Sports Car Classic", "location": "Detroit, Michigan", "start": "2027-06-04", "end": "2027-06-05", "url": "https://www.imsa.com/events/2027-detroit-street-circuit" },
+        { "name": "Sahlen's Six Hours of The Glen", "location": "Watkins Glen, New York", "start": "2027-06-24", "end": "2027-06-27", "url": "https://www.imsa.com/events/2027-watkins-glen-international" },
+        { "name": "Chevrolet Grand Prix", "location": "Bowmanville, Ontario", "start": "2027-07-09", "end": "2027-07-11", "url": "https://www.imsa.com/events/2027-canadian-tire-motorsport-park" },
+        { "name": "Motul SportsCar Endurance Grand Prix", "location": "Elkhart Lake, Wisconsin", "start": "2027-08-05", "end": "2027-08-08", "url": "https://www.imsa.com/events/2027-road-america" },
+        { "name": "Michelin GT Challenge at VIR", "location": "Alton, Virginia", "start": "2027-08-20", "end": "2027-08-22", "url": "https://www.imsa.com/events/2027-virginia-international-raceway" },
+        { "name": "TireRack.com Battle on The Bricks", "location": "Indianapolis, Indiana", "start": "2027-09-17", "end": "2027-09-19", "url": "https://www.imsa.com/events/2027-indianapolis-motor-speedway" },
+        { "name": "Motul Petit Le Mans", "location": "Braselton, Georgia", "start": "2027-10-06", "end": "2027-10-09", "url": "https://www.imsa.com/events/2027-michelin-raceway-road-atlanta" }
+      ]
+    },
+    {
+      "id": "gtwc",
+      "name": "GT World Challenge Europe Powered by AWS",
+      "shortName": "GT World Challenge Europe",
+      "season": 2027,
+      "calendarStatus": "partial",
+      "discipline": "European GT3 racing",
+      "roundCount": null,
+      "sourceName": "Official GT World Challenge Europe calendar and news",
+      "sourceUrl": "https://www.gt-world-challenge-europe.com/calendar",
+      "note": "The complete 2027 calendar is not published yet. These three rounds have been announced by the series.",
+      "events": [
+        { "name": "Circuit Paul Ricard (Endurance Cup)", "location": "Le Castellet, France", "start": "2027-04-15", "end": "2027-04-18", "url": "https://www.gt-world-challenge-europe.com/calendar" },
+        { "name": "Brands Hatch (Sprint Cup)", "location": "Kent, United Kingdom", "start": "2027-05-01", "end": "2027-05-02", "url": "https://www.gt-world-challenge-europe.com/news/3348/tickets-for-2027-sprint-cup-opener-at-brands-hatch-on-sale-now?filter_team_news=0" },
+        { "name": "CrowdStrike 24 Hours of Spa", "location": "Stavelot, Belgium", "start": "2027-06-24", "end": "2027-06-27", "url": "https://www.gt-world-challenge-europe.com/news/3348/tickets-for-2027-sprint-cup-opener-at-brands-hatch-on-sale-now?filter_team_news=0" }
+      ]
+    },
+    {
+      "id": "motogp",
+      "name": "MotoGP World Championship",
+      "shortName": "MotoGP",
+      "season": 2027,
+      "calendarStatus": "published",
+      "discipline": "Grand Prix motorcycle racing",
+      "roundCount": 22,
+      "sourceName": "Official MotoGP 2027 calendar",
+      "sourceUrl": "https://www.motogp.com/en/calendar/2027",
+      "events": [
+        { "name": "Thailand Grand Prix", "location": "Buriram, Thailand", "start": "2027-03-05", "end": "2027-03-07", "url": "https://www.motogp.com/en/calendar/2027" },
+        { "name": "Qatar Grand Prix", "location": "Lusail, Qatar", "start": "2027-03-12", "end": "2027-03-14", "url": "https://www.motogp.com/en/calendar/2027" },
+        { "name": "Brazil Grand Prix", "location": "Goiania, Brazil", "start": "2027-04-02", "end": "2027-04-04", "url": "https://www.motogp.com/en/calendar/2027" },
+        { "name": "Argentina Grand Prix", "location": "Buenos Aires, Argentina", "start": "2027-04-09", "end": "2027-04-11", "url": "https://www.motogp.com/en/calendar/2027" },
+        { "name": "United States Grand Prix", "location": "Austin, United States", "start": "2027-04-23", "end": "2027-04-25", "url": "https://www.motogp.com/en/calendar/2027" },
+        { "name": "Spanish Grand Prix", "location": "Jerez, Spain", "start": "2027-05-07", "end": "2027-05-09", "url": "https://www.motogp.com/en/calendar/2027" },
+        { "name": "French Grand Prix", "location": "Le Mans, France", "start": "2027-05-14", "end": "2027-05-16", "url": "https://www.motogp.com/en/calendar/2027" },
+        { "name": "Italian Grand Prix", "location": "Mugello, Italy", "start": "2027-05-28", "end": "2027-05-30", "url": "https://www.motogp.com/en/calendar/2027" },
+        { "name": "Catalan Grand Prix", "location": "Barcelona, Spain", "start": "2027-06-11", "end": "2027-06-13", "url": "https://www.motogp.com/en/calendar/2027" },
+        { "name": "Dutch Grand Prix", "location": "Assen, Netherlands", "start": "2027-06-25", "end": "2027-06-27", "url": "https://www.motogp.com/en/calendar/2027" },
+        { "name": "German Grand Prix", "location": "Sachsenring, Germany", "start": "2027-07-09", "end": "2027-07-11", "url": "https://www.motogp.com/en/calendar/2027" },
+        { "name": "Czech Grand Prix", "location": "Brno, Czechia", "start": "2027-07-16", "end": "2027-07-18", "url": "https://www.motogp.com/en/calendar/2027" },
+        { "name": "British Grand Prix", "location": "Silverstone, United Kingdom", "start": "2027-08-13", "end": "2027-08-15", "url": "https://www.motogp.com/en/calendar/2027" },
+        { "name": "Austrian Grand Prix", "location": "Spielberg, Austria", "start": "2027-08-27", "end": "2027-08-29", "url": "https://www.motogp.com/en/calendar/2027" },
+        { "name": "San Marino Grand Prix", "location": "Misano, Italy", "start": "2027-09-10", "end": "2027-09-12", "url": "https://www.motogp.com/en/calendar/2027" },
+        { "name": "Aragon Grand Prix", "location": "Alcaniz, Spain", "start": "2027-09-17", "end": "2027-09-19", "url": "https://www.motogp.com/en/calendar/2027" },
+        { "name": "Portuguese Grand Prix", "location": "Portimao, Portugal", "start": "2027-10-01", "end": "2027-10-03", "url": "https://www.motogp.com/en/calendar/2027" },
+        { "name": "Japanese Grand Prix", "location": "Motegi, Japan", "start": "2027-10-15", "end": "2027-10-17", "url": "https://www.motogp.com/en/calendar/2027" },
+        { "name": "Malaysian Grand Prix", "location": "Sepang, Malaysia", "start": "2027-10-22", "end": "2027-10-24", "url": "https://www.motogp.com/en/calendar/2027" },
+        { "name": "Indonesian Grand Prix", "location": "Mandalika, Indonesia", "start": "2027-10-29", "end": "2027-10-31", "url": "https://www.motogp.com/en/calendar/2027" },
+        { "name": "Australian Grand Prix", "location": "Adelaide, Australia", "start": "2027-11-12", "end": "2027-11-14", "url": "https://www.motogp.com/en/calendar/2027" },
+        { "name": "Valencia Grand Prix", "location": "Valencia, Spain", "start": "2027-11-26", "end": "2027-11-28", "url": "https://www.motogp.com/en/calendar/2027" }
+      ]
+    },
+    {
+      "id": "wrc",
+      "name": "FIA World Rally Championship",
+      "shortName": "WRC Rally",
+      "season": 2027,
+      "calendarStatus": "published",
+      "discipline": "International stage rally",
+      "roundCount": 15,
+      "sourceName": "Autosport report on the FIA 2027 WRC calendar",
+      "sourceUrl": "https://www.autosport.com/wrc/news/wrc-expands-2027-calendar-to-15-rounds-as-usa-uk-return/10862961/",
+      "note": "The 15-round calendar was published by the FIA on 8 October 2026. Event detail links open the official WRC calendar.",
+      "events": [
+        { "name": "Rallye Monte-Carlo", "location": "Monaco", "start": "2027-01-21", "end": "2027-01-24", "url": "https://www.wrc.com/en/calendar" },
+        { "name": "Rally Sweden", "location": "Sweden", "start": "2027-02-18", "end": "2027-02-21", "url": "https://www.wrc.com/en/calendar" },
+        { "name": "Safari Rally Kenya", "location": "Kenya", "start": "2027-03-18", "end": "2027-03-21", "url": "https://www.wrc.com/en/calendar" },
+        { "name": "Croatia Rally", "location": "Croatia", "start": "2027-04-08", "end": "2027-04-11", "url": "https://www.wrc.com/en/calendar" },
+        { "name": "Rally Islas Canarias", "location": "Canary Islands, Spain", "start": "2027-05-06", "end": "2027-05-09", "url": "https://www.wrc.com/en/calendar" },
+        { "name": "Rally Japan", "location": "Japan", "start": "2027-06-03", "end": "2027-06-06", "url": "https://www.wrc.com/en/calendar" },
+        { "name": "Acropolis Rally Greece", "location": "Greece", "start": "2027-06-24", "end": "2027-06-27", "url": "https://www.wrc.com/en/calendar" },
+        { "name": "Rally d'Italia", "location": "Rome, Italy", "start": "2027-07-08", "end": "2027-07-11", "url": "https://www.wrc.com/en/calendar" },
+        { "name": "Rally Estonia", "location": "Estonia", "start": "2027-07-22", "end": "2027-07-25", "url": "https://www.wrc.com/en/calendar" },
+        { "name": "Rally Finland", "location": "Finland", "start": "2027-07-29", "end": "2027-08-01", "url": "https://www.wrc.com/en/calendar" },
+        { "name": "Rally US", "location": "Knoxville, United States", "start": "2027-08-26", "end": "2027-08-29", "url": "https://www.wrc.com/en/calendar" },
+        { "name": "Rally Scotland", "location": "Scotland, United Kingdom", "start": "2027-09-30", "end": "2027-10-03", "url": "https://www.wrc.com/en/calendar" },
+        { "name": "Rally del Paraguay", "location": "Paraguay", "start": "2027-10-21", "end": "2027-10-24", "url": "https://www.wrc.com/en/calendar" },
+        { "name": "Rally Chile Biobío", "location": "Chile", "start": "2027-11-04", "end": "2027-11-07", "url": "https://www.wrc.com/en/calendar" },
+        { "name": "Rally Saudi Arabia", "location": "Saudi Arabia", "start": "2027-11-25", "end": "2027-11-28", "url": "https://www.wrc.com/en/calendar" }
+      ]
+    }
+  ]
+}

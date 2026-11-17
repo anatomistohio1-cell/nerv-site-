@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>NERV LOQ Monitor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="loq">
+    <div class="app-shell page-shell">
+      <header class="topbar">
+        <a class="brand-anchor" href="index.html" aria-label="Open home screen">
+          <span class="brand-mark">N</span>
+          <div>
+            <p class="eyebrow">Magi interface</p>
+            <h1>LOQ MONITOR</h1>
+          </div>
+        </a>
+        <div class="topbar-actions">
+          <button class="ghost-button" id="toggleFullscreen" type="button">Full Screen</button>
+        </div>
+      </header>
+
+      <main class="page-view">
+        <section class="card single-page-card">
+          <div class="card-header">
+            <div>
+              <p class="eyebrow">WINDOWS COMPANION</p>
+              <h2 id="loqDeviceName">LOQ status</h2>
+            </div>
+            <div class="inline-status muted" id="loqConnectionBadge">DISCONNECTED</div>
+          </div>
+
+          <p class="source-note" id="loqConnectionMessage" role="status" aria-live="polite">
+            Connect to LOQ Link to load live system and endpoint status.
+          </p>
+
+          <div class="loq-grid">
+            <div class="metric-card">
+              <span class="metric-label">CPU</span>
+              <strong id="loqCpuMetric">—</strong>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">Memory</span>
+              <strong id="loqMemoryMetric">—</strong>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">Battery</span>
+              <strong id="loqBatteryMetric">—</strong>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">Uptime</span>
+              <strong id="loqUptimeMetric">—</strong>
+            </div>
+          </div>
+
+          <div class="runtime-list">
+            <div class="runtime-row">
+              <span>Audio endpoint source</span>
+              <span id="loqAudioSource" class="status-tag standby">Not connected</span>
+            </div>
+            <div class="runtime-row">
+              <span>Output controls</span>
+              <span class="status-tag standby">See Audio</span>
+            </div>
+            <div class="runtime-row">
+              <span>Multi-output synchronisation</span>
+              <span class="status-tag standby">Not implemented</span>
+            </div>
+            <div class="runtime-row">
+              <span>Android receiver</span>
+              <span class="status-tag standby">Not implemented</span>
+            </div>
+          </div>
+
+          <div class="connect-actions">
+            <a class="control-button" href="connect.html">Connect LOQ</a>
+            <a class="control-button alt" href="audio.html">View Windows audio outputs</a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

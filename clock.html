@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>NERV Clock</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="clock" class="weather-surface">
+    <div class="app-shell page-shell">
+      <header class="topbar">
+        <a class="brand-anchor" href="index.html" aria-label="Open home screen">
+          <span class="brand-mark">N</span>
+          <div>
+            <p class="eyebrow">Magi interface</p>
+            <h1>NERV CLOCK</h1>
+          </div>
+        </a>
+        <div class="topbar-actions">
+          <button class="ghost-button" id="toggleFullscreen" type="button">Full Screen</button>
+          <button class="accent-button" id="toggleScreensaver" type="button">Screensaver</button>
+        </div>
+      </header>
+
+      <main class="clock-focus-layout">
+        <section class="clock-focus-card" aria-label="Local time and weather">
+          <p class="eyebrow">MAGI CLOCK / LOCAL CONDITIONS</p>
+          <div class="clock-focus-time" id="clockDisplay">00:00:00</div>
+          <div class="clock-focus-date" id="clockDate">Monday, 01 Jan</div>
+          <div class="clock-focus-zone" id="timezoneLabel">Local time</div>
+          <div class="weather-focus-panel" aria-live="polite">
+            <span class="weather-focus-symbol" aria-hidden="true"></span>
+            <div class="weather-focus-copy">
+              <strong id="weatherCondition">Weather off</strong>
+              <span><span id="weatherTemperature">—</span><span id="weatherLocation">Enable location for current conditions</span></span>
+              <small id="weatherUpdated">No location is saved</small>
+            </div>
+          </div>
+          <div class="weather-focus-actions">
+            <button class="control-button" id="enableWeather" type="button">Enable local weather</button>
+            <button class="text-button hidden" id="forgetWeatherLocation" type="button">Forget saved location</button>
+          </div>
+          <p class="weather-message" id="weatherMessage" role="status">Allow location once to load live conditions. The clock stays local if permission is denied.</p>
+        </section>
+      </main>
+    </div>
+
+    <div id="clockOverlay" class="clock-overlay hidden" aria-live="assertive">
+      <div class="overlay-content">
+        <p class="eyebrow">AUXILIARY CLOCK</p>
+        <div id="overlayTime" class="overlay-time">00:00:00</div>
+        <div id="overlayDate" class="overlay-date">Monday, 01 Jan</div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Connect LOQ Link</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="connect">
+    <div class="app-shell page-shell">
+      <header class="topbar">
+        <a class="brand-anchor" href="index.html" aria-label="Open home screen">
+          <span class="brand-mark">N</span>
+          <div>
+            <p class="eyebrow">Magi interface</p>
+            <h1>LOQ LINK</h1>
+          </div>
+        </a>
+        <div class="topbar-actions">
+          <button class="ghost-button" id="toggleFullscreen" type="button">Full Screen</button>
+        </div>
+      </header>
+
+      <main class="page-view">
+        <section class="card single-page-card connection-card">
+          <div class="card-header">
+            <div>
+              <p class="eyebrow">AUTHENTICATED COMPANION</p>
+              <h2>Connect to the Windows host</h2>
+            </div>
+            <div class="inline-status muted" id="companionConnectionBadge">DISCONNECTED</div>
+          </div>
+
+          <p class="source-note">
+            Pair through the cloud relay with a one-time pairing code. LOQ Link keeps Windows hardware local and opens an authenticated outbound WebSocket; no laptop port forwarding is required.
+          </p>
+
+          <form id="companionConnectForm" class="companion-connect-form">
+            <label class="companion-field">
+              <span>Pairing code</span>
+              <input
+                id="companionPairingCode"
+                name="pairingCode"
+                type="password"
+                minlength="16"
+                maxlength="512"
+                autocomplete="off"
+                required
+              />
+            </label>
+            <div class="connect-actions">
+              <button class="control-button" id="pairCompanion" type="submit">Pair LOQ</button>
+              <button class="control-button alt" id="disconnectCompanion" type="button">Disconnect</button>
+            </div>
+            <details class="local-companion-settings">
+              <summary>Advanced: direct local connection for testing</summary>
+              <label class="companion-field" for="companionUrl">
+                <span>LOQ Link HTTPS address</span>
+                <input
+                  id="companionUrl"
+                  name="companionUrl"
+                  type="url"
+                  inputmode="url"
+                  placeholder="https://your-loq-host:8000"
+                  autocomplete="url"
+                />
+              </label>
+            </details>
+          </form>
+
+          <p class="source-note" id="companionConnectionMessage" role="status" aria-live="polite">
+            Not connected. Start LOQ Link on Windows and enter its pairing code.
+          </p>
+
+          <div class="connect-steps">
+            <div class="step-row">
+              <span>01</span>
+              <div>
+                <strong>Start LOQ Link on Windows</strong>
+                <small>Configure the relay, device token, and pairing code in the Windows environment.</small>
+              </div>
+            </div>
+            <div class="step-row">
+              <span>02</span>
+              <div>
+                <strong>Use a trusted HTTPS connection</strong>
+                <small>The laptop starts an authenticated outbound TLS WebSocket. The browser never receives its device credential.</small>
+              </div>
+            </div>
+            <div class="step-row">
+              <span>03</span>
+              <div>
+                <strong>Manage detected outputs in Audio</strong>
+                <small>The Audio page lists endpoints reported by Windows and lets you select the Windows default playback output.</small>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
