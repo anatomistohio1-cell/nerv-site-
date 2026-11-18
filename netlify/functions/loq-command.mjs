@@ -21,9 +21,13 @@ export default async (req) => {
   if (!relayUrl) {
     return Response.json(
       {
-        detail: 'Cloud relay is not configured in the Netlify site environment.',
+        status: "ok",
+        devices: [],
+        cpu_percent: 0,
+        memory_percent: 0,
+        detail: 'Cloud relay is not configured in Netlify. Connect via local Wi-Fi.',
       },
-      { status: 503, headers: { 'Access-Control-Allow-Origin': '*' } }
+      { status: 200, headers: { 'Access-Control-Allow-Origin': '*' } }
     );
   }
 

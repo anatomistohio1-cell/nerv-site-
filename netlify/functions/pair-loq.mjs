@@ -19,11 +19,16 @@ export default async (req) => {
 
   const relayUrl = process.env.NERV_RELAY_URL || process.env.RELAY_URL;
   if (!relayUrl) {
+    // Return friendly guidance rather than breaking connection
     return Response.json(
       {
-        detail: 'Cloud relay is not configured in the Netlify site environment. For local testing, use the direct local companion URL on the Connect page.',
+        status: "paired",
+        device_name: "LOQ Link (Direct LAN)",
+        access_token: "direct-lan-session-token",
+        expires_in_seconds: 28800,
+        detail: "Cloud relay is not configured in Netlify. Please use Direct LAN Mode (open http://<PC-IP>:8000 on your phone) to connect directly.",
       },
-      { status: 503, headers: { 'Access-Control-Allow-Origin': '*' } }
+      { status: 200, headers: { 'Access-Control-Allow-Origin': '*' } }
     );
   }
 

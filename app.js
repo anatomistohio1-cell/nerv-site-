@@ -1083,11 +1083,14 @@ const isAllowedCompanionUrl = (value) => {
   try {
     const url = new URL(value);
     const loopback = ['localhost', '127.0.0.1', '[::1]'].includes(url.hostname);
+    const isPrivateIp = /^192\.168\.\d{1,3}\.\d{1,3}$/.test(url.hostname)
+      || /^10\.\d{1,3}\.\d{1,3}\.\d{1,3}$/.test(url.hostname)
+      || /^172\.(1[6-9]|2\d|3[01])\.\d{1,3}\.\d{1,3}$/.test(url.hostname);
     const originOnly = url.pathname === '/' && !url.search && !url.hash;
     return originOnly
       && !url.username
       && !url.password
-      && (url.protocol === 'https:' || (loopback && url.protocol === 'http:'));
+      && (url.protocol === 'https:' || ((loopback || isPrivateIp) && url.protocol === 'http:'));
   } catch (error) {
     return false;
   }
@@ -1100,6 +1103,27 @@ const attachCompanionControls = () => {
   if (urlInput) {
     urlInput.value = getCompanionUrl();
     if (urlInput.value) urlInput.closest('details')?.setAttribute('open', '');
+  }
+
+  // Auto-fill and auto-pair if URL parameters are supplied
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const codeParam = params.get('code');
+    const urlParam = params.get('url');
+    if (urlParam && urlInput) {
+      urlInput.value = urlParam;
+      urlInput.closest('details')?.setAttribute('open', '');
+    }
+    if (codeParam && pairingCodeInput) {
+      pairingCodeInput.value = codeParam;
+      if (form) {
+        setTimeout(() => {
+          form.dispatchEvent(new Event('submit', { cancelable: true }));
+        }, 300);
+      }
+    }
+  } catch (e) {
+    console.warn('Auto-pair parse error:', e);
   }
 
   if (form && urlInput && pairingCodeInput) {
